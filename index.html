@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Chatbot FB Latin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+<link rel='stylesheet prefetch' href='https://afeld.github.io/emoji-css/emoji.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <nav>
+  <a href="#" class="brand-logo center">LatinChat</a>
+</nav>
+<main id="app">
+  <div class="chat animated fadeInUp">
+    <div class="chat_head">
+      <h5>Chatbot</h5>
+    </div>
+    <div class="chat_body">
+      <div class="chat_user">
+       <div class="chip">
+         <p class="state"></p>
+         <img src="http://static.djbooth.net/pics-features/stromae-fan-art.jpg" alt="profile">
+          <strong>
+            {{ user }} <i class="em em-yum"></i>
+          </strong> 
+          <p>{{ state }}</p>
+       </div>
+        <hr>
+        <div class="chat_msg">
+        <ul class="collection">
+    
+          <li class="collection-item animated fadeIn" v-for="msg in msgDB">
+            <span>{{ msg | capitalize }}</span>
+          </li> 
+        </ul>
+        </div>
+      </div>
+    </div>
+    <div class="chat_foot">
+      <input type="text" placeholder="Escribe un mensaje..." @keyup.enter="sendMsg" v-model="msg">
+       <i class="material-icons send" @click="sendMsg">send</i>
+      <div class="chat_emojis animated fadeIn">
+        <i class="em em-astonished"></i>
+        <i class="em em-face_with_monocle"></i>
+        <i class="em em-sunglasses"></i>
+        <i class="em em-face_with_finger_covering_closed_lips"></i>
+        <i class="em em-blush"></i>
+        <i class="em em-avocado"></i>
+        <i class="em em---1"></i>
+        <i class="em em-beers"></i>
+        <i class="em em-video_game"></i>
+      </div>
+    </div>
+  </div>
+</main>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.3/vue.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.1/axios.js'></script>
+<script src='https://mubaidr.github.io/rainyday.js/js/rainyday.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

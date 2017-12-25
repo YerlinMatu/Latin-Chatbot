@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css?family=Damion");
+nav {
+  background-color: #e67e22;
+  font-family: 'Damion';
+}
+
+.chat {
+  height: 450px;
+  width: 310px;
+  background-color: #ecf0f1;
+  position: fixed;
+  bottom: 0px;
+  left: 3%;
+  border-radius: 12px 12px 0px 0px;
+}
+.chat .chat_head {
+  height: 45px;
+  width: 310px;
+  background-color: #e67e22;
+  color: white;
+  border-radius: 12px 12px 0px 0px;
+}
+.chat .chat_head h5 {
+  position: absolute;
+  left: 20px;
+  font-size: 17px;
+}
+.chat .chat_body {
+  height: 300px;
+}
+.chat .chat_body hr {
+  background-color: gray;
+  border-top: 2px solid #e1e1e1;
+}
+.chat .chat_body .chat_user {
+  padding: 20px;
+}
+.chat .chat_body .chat_user .chip {
+  margin-left: 10px;
+}
+.chat .chat_body .chat_user ul.collection {
+  border: none;
+}
+.chat .chat_body .chat_user li.collection-item {
+  border-radius: 20px;
+  margin-top: 5px;
+  background-color: #e1e1e1;
+}
+.chat .chat_body .state {
+  position: relative;
+  left: -30px;
+  top: 15px;
+}
+.chat .chat_body .state:before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #2ecc71;
+}
+.chat .chat_foot {
+  margin: 0 auto;
+  bottom: 0px;
+  width: 85%;
+  z-index: 1000;
+}
+.chat .chat_foot input {
+  width: 89%;
+}
+.chat .chat_foot .send {
+  top: 20px;
+  position: relative;
+  color: #e67e22;
+  cursor: pointer;
+}
+
+body {
+  background-image: url("https://wallup.net/wp-content/uploads/2015/12/74585-abstract.jpg");
+}
