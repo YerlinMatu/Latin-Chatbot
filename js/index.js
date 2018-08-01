@@ -31,7 +31,7 @@ const app = new Vue({
     }
   },
     notification() {
-      let sound = new Audio();
+      const sound = new Audio();
       sound.src = 'http://www.sonidosmp3gratis.com/sounds/mejilla_2';
       sound.load(); sound.play();
     },
